@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation" style="margin-bottom: 13px;">
+        <img class="navbar-brand">
+        <div class="hell">
+            <a href="index.html"><img src="images/WhatsApp Image 2023-09-13 at 11.47.42.jpg" class="nav-im"></img></a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu menu-ba">
+          <div class="navbar-start">
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link nav-1 is-size-5" href="index.html">
+                  Bus Info
+                </a>
+        
+                <div class="navbar-dropdown">
+                  <a class="navbar-item " href="btn-bus">
+                    Live Bus Status
+                  </a>
+                  <a class="navbar-item" href="index.html">
+                    Time Table
+                  </a>
+                  
+                </div>
+              </div>
+            <a class="navbar-item nav-2 is-size-5 " href="Help.html">
+              Help
+            </a>
+      
+            <a class="navbar-item nav-3 is-size-5 has-text-left" href="AboutUs.html">
+              About Us
+            </a>
+      
+            
+          </div>
+        </div>
+      
+          
+        </div>
+      </nav>
+
+    <section>
+        
+        <div class="hero is-primary is-bold">
+            <div class="hero-body">
+              <div class="container">
+                <h1 class="title is-1">
+                    Help
+                  </h1>
+                  <h2 class="subtitle">
+                    Get answers to your questions
+                  </h2>
+                <div class="field is-grouped">
+                    <p class="control is-expanded">
+                      <input class="input is-rounded" type="text" placeholder="How can we help!">
+                    </p> 
+                    <p class="control">
+                      <a class="button ser-btn is-rounded is-bold">
+                        Search
+                      </a>
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <br>
+
+      <section class="help-content">
+        
+        <div class="container">
+            <h1 class="title is-one-third">Frequently Asked Questions (FAQ)</h1>
+          <div class="columns">
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content">
+                  <p class="title">
+                    How do I book a bus ticket?
+                  </p>
+                  <p class="subtitle">
+                    <a href="#">Click here</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content">
+                  <p class="title">
+                    How can I track my bus in real-time?
+                  </p>
+                  <p class="subtitle">
+                    <a href="#">Click here</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column is-one-third">
+              <div class="card">
+                <div class="card-content">
+                  <p class="title">
+                    Contact Us regarding any issues.
+                  </p>
+                  <p class="subtitle">
+                    <a href="#">Click here</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <hr class="hr-line ">
+
+    <section style="margin-bottom: 77px;">
+        <div class="container">
+            <h1 class="title is-bold">
+                Helpline Numbers
+            </h1>
+            <div class="box">
+                <h2>Women Helpline</h2>
+                <h2>1091</h2>
+            </div>
+            <div class="box">
+                <h2>Child Helpline</h2>
+                <h2>1098</h2>
+            </div>
+            <div class="box">
+                <h2>NHAI Helpline</h2>
+                <h2>9816026501</h2>
+            </div>
+
+        </div>
+    </section>
+
+    <button onclick="getLocation()" class="sos-btn">
+      <p class="is-size-2 has-text-white">SOS</p></button>
+    <p id="demo"></p>
+
+    <!-- <---footer--->
+
+    
+
+    <footer class="footer footer-sec is-fullheight">
+      <div class="foot-head">
+        <a href="index.html"><img src="images/bz.png" alt="" class="foot-img"></a>
+          <!-- <p class=" is-size-2 has-text-white foot-heading">SOLSKYY</p> -->
+          <div class="icons">
+            <a target="_blank" href=""><img src="images/icons8-instagram-50 (1).png" class="ig-img is-size-4"></a>
+            <a target="_blank" href=""><img src="images/icons8-facebook-50.png" class="ig-img"></a>
+            <a target="_blank" href=""><img src="images/icons8-playstore-50.png" class="ig-img"></a>
+            <a target="_blank" href=""><img src="images/icons8-ios-logo-50.png" class="ig-img"></a>
+              <!-- <a target="_blank" href="https://instagram.com/_solskyy_?igshid=NjIwNzIyMDk2Mg=="> <i class="ig-icon fa fa-instagram mr-5 is-size-2 has-text-white mt-5 " ></i></a>
+              <a target="_blank" href="https://www.facebook.com/fb.solskyy"><i class="fa fa-facebook-square mr-5 is-size-2 has-text-white mt-5 " aria-hidden="true"></i></a>
+              <a target="_blank" href="https://www.linkedin.com/company/solskyy/"> <i class="fa fa-linkedin-square mr-5 is-size-2 has-text-white mt-5 linkd-icon" aria-hidden="true"></i></a>
+              <a target="_blank" href="https://youtube.com/@solskyy7"> <i class="fa fa-youtube-play mr-5 is-size-2 has-text-white mt-5 yout-icon" aria-hidden="true"></i></a> -->
+          </div>
+      </div>
+      <hr class="line-btw">
+      <ul class="footer-list mt-4">
+          <li class="ml-6 mr-6 is-size-5 "><a href="index.html" class="has-text-white">Home</a></li>
+          <li class="ml-6 mr-6 is-size-5"><a href="AboutUs.html" class="has-text-white">About US</a></li>
+          <li class="ml-6 mr-6 is-size-5"><a href="Help.html" class="has-text-white">Help & Support</a></li>
+          <li class="ml-6 mr-6 is-size-5"><a href="disclaimer.html" class="has-text-white">Disclaimer</a></li>
+          <li class="ml-6 mr-6 is-size-5"><a href="privacy-policy.html" class="has-text-white">Privacy Policy</a></li>
+      </ul>
+      <!-- <div class="columns mob-tab-logo">
+          <img src="images/whitevariant.svg" class="is-5 column footer-logo" alt="" style="height: 75px; width: 180px;">
+          <h3 class="is-size-3 has-text-white  column footer-solskyy">SOLSKYY</h3>
+      </div> -->
+  
+      <div class="footer-copyright ">
+          <p class="footer-date has-text-white is-justify-content-flex-end ">
+              &copy;
+              <!-- <script>
+                  document.write(new Date().getFullYear())
+              </script> -->
+              . Govt. Of Himachal Pradesh
+          </p>
+      </div>
+  </footer>
+  <script>
+      var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+  x.style.marginLeft="45%";
+  x.style.marginTop="-4%";
+  x.style.marginBottom="2%";
+}
+    </script>
+    
+</body>
+</html>

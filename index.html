@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Real-time</title>
+    <!-- font awesome icons -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav class="navbar nav-back" role="navigation" aria-label="main navigation">
+        <img class="navbar-brand">
+        <div class="hell">
+            <img src="images/WhatsApp Image 2023-09-13 at 11.47.42.jpg" class="nav-img" ></img>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu menu-bar">
+          <div class="navbar-start">
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link nav-1 is-size-5 has-text-black">
+                  Bus Info
+                </a>
+        
+                <div class="navbar-dropdown">
+                  <a class="navbar-item has-text-black" href="#live-status">
+                    Live Bus Status
+                  </a>
+                  <a class="navbar-item has-text-black" href="#time-table">
+                    Time Table
+                  </a>
+                  
+                </div>
+              </div>
+            <a class="navbar-item nav-2 is-size-5 has-text-black" href="Help.html">
+              Help
+            </a>
+      
+            <a class="navbar-item nav-3 is-size-5 has-text-left has-text-black" href="AboutUs.html">
+              About Us
+            </a>
+      
+            
+          </div>
+        </div>
+      
+          
+        </div>
+      </nav>
+
+      <div>
+        <div class="title-back">
+        <h1 class="title head-title has-text-weight-bold">Why Do We Use It?</h1>
+        <h3 class="head-content has-text-justified">Have you ever faced safety issues while travelling by a bus? Did you find it difficult to locate nearby facilities? Always fearing if a natural disaster might strike or what if the bus is on the wrong route? We got you covered for all the queries, in a one-stop go !!!</h3>
+        <a href="#video-frame"><button class="button is-success btn-head has-text-white">Get Started</button></a>
+      
+        <img src="images/WhatsApp Image 2023-09-12 at 21.46.21.jpg" class="head-img"></img>
+      </div>
+        
+      </div>
+
+      <iframe width="1500" height="800" id="video-frame" src="images/video.mp4"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+      <div class="container card-background" id="live-status">
+        
+        <h2 class="subtitle is-2 has-text-centered mt-6 has-text-black btn-bus"> Check Bus Status</h2>
+
+        <div class="card card-back">
+            <div class="card-content">
+              <div class="content is-size-4 ml-5">
+                Search By Bus
+              </div>
+
+              <div class="card-box">
+                <h1 class=" card-text-1">Bus Number/Name</h1>
+                <div class="control">
+                  <input class="input card-text-2" type="text" placeholder="Select Bus No.">
+                </div> 
+                <button class="button is-link btn-card has-text-white" id="search-btn" onclick="myFunction()" dblclick = "myHero()">Check Status</button>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="is-size-4 has-text-blue hr-text">Or</h3>
+          
+
+          <div class="card card-back">
+            <div class="card-content">
+              <h1 class=" card-text-1">From</h1>
+                <div class="control">
+                  <input class="input card-text-2" type="text" placeholder="starts from here">
+                </div>
+              </div>
+
+              <div class="card-box">
+                <h1 class=" card-text-3">To</h1>
+                <div class="control">
+                  <input class="input card-text-2" type="text" placeholder="ends here">
+                </div> 
+                <button class="button is-link btn-card has-text-white">Check Status</button>
+              </div>
+            </div>
+          </div>
+      </div>
+ 
+      <div style="margin-bottom: 45px;">
+        <div>
+          <h2 class="subtitle is-2 has-text-centered mt-6 has-text-weight-bold" id="time-table">Time Table</h2>
+          <div class="control">
+              <input id="searchInput" class="input input-tt" type="text" placeholder="Type a Bus number or name">
+          </div>
+  
+          <h2 class="subtitle is-4 has-text-centered mt-6 has-text-weight-bold">List of Himachal buses and their time table</h2>
+  
+          <!-- Table structure -->
+          <table class="container table is-fullwidth " aria-label="breadcrumbs" style="margin-top: 20px;">
+              <thead class="table is-bordered is-fullwidth  breadcrumb has-dot-separator tt-back" aria-label="breadcrumbs">
+                  <tr>
+                      <th class="magic-moments">Bus Number</th>
+                      <th class="magic-moment">Bus Name</th>
+                      <th class="magic-momen">Fuel Type</th>
+                      <th class="magic-mome">Departure Time (Hrs)</th>
+                      <th class="magic-mom">Arrival Time (Hrs)</th>
+                  </tr>
+              </thead>
+              <tbody class="table is-bordered is-fullwidth is-expanded">
+                  <!-- Table rows here -->
+                  <tr class="breadcrumb has-dot-separator tt-back-1" aria-label="breadcrumbs">
+                      <td ><a href="Page1.html" id="list1-num" class="has-text-black">12267</a></td>
+                      <td><a href="Page1.html" class="has-text-black">HAMIRPUR-KASOL</a></td>
+                      <td><a href="#" class="has-text-black">CNG</a></td>
+                      <td><a href="#" class="has-text-black">23:25(Hrs)</a></td>
+                      <td><a href="#" class="has-text-black">05:55(Hrs)</a></td>
+                  </tr>
+                  
+                  <tr class="breadcrumb has-dot-separator tt-back-1" aria-label="breadcrumbs">
+                      <td><a href="Page1.html" id="list1-num" class="has-text-black">12248</a></td>
+                      <td><a href="Page1.html" class="has-text-black">SHIMLA-KASOL</a></td>
+                      <td><a href="#" class="has-text-black">PETROL</a></td>
+                      <td><a href="#" class="has-text-black">23:25(Hrs)</a></td>
+                      <td><a href="#" class="has-text-black">05:55(Hrs)</a></td>
+                  </tr>
+                  
+                  <tr class="breadcrumb has-dot-separator tt-back-1" aria-label="breadcrumbs">
+                      <td><a href="Page1.html" id="list1-num" class="has-text-black">12245</a></td>
+                      <td><a href="Page1.html" class="has-text-black">SHIMLA-MANDI</a></td>
+                      <td><a href="#" class="has-text-black">PETROL</a></td>
+                      <td><a href="#" class="has-text-black">23:25(Hrs)</a></td>
+                      <td><a href="#" class="has-text-black">05:55(Hrs)</a></td>
+                  </tr>
+                  
+                  <tr class="breadcrumb has-dot-separator tt-back-1" aria-label="breadcrumbs">
+                      <td><a href="Page1.html" id="list1-num" class="has-text-black">12288</a></td>
+                      <td><a href="Page1.html" class="has-text-black">SHIMLA-DHARAMSHALA</a></td>
+                      <td><a href="#" class="has-text-black">CNG</a></td>
+                      <td><a href="#" class="has-text-black">23:25(Hrs)</a></td>
+                      <td><a href="#" class="has-text-black">05:55(Hrs)</a></td>
+                  </tr>
+                  
+                  <tr class="breadcrumb has-dot-separator tt-back-1" aria-label="breadcrumbs">
+                      <td><a href="Page1.html" id="list1-num" class="has-text-black">12145</a></td>
+                      <td><a href="Page1.html" class="has-text-black">MANALI-DALHOUSIE</a></td>
+                      <td><a href="#" class="has-text-black">PETROL</a></td>
+                      <td><a href="#" class="has-text-black">23:25(Hrs)</a></td>
+                      <td><a href="#" class="has-text-black">05:55(Hrs)</a></td>
+                  </tr>                                
+  
+                  <!-- Add more table rows as needed -->
+              </tbody>
+          </table>
+      </div>
+  </div>
+
+  <!-- <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/Bus_illustrate.png" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/bz.png" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/WhatsApp Image 2023-09-12 at 21.46.21.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+  
+      </div> -->
+      
+      <!-- <footer>
+        <div class="footer-back">
+          <div>
+            <img src="images/bz.png" class="foot-img">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+        </div>
+      </footer> -->
+
+      <footer class="footer footer-sec is-fullheight">
+        <div class="foot-head">
+          <a href="index.html"><img src="images/bz.png" alt="" class="foot-img"></a>
+            <!-- <p class=" is-size-2 has-text-white foot-heading">SOLSKYY</p> -->
+            <div class="icons">
+              <a target="_blank" href=""><img src="images/icons8-instagram-50 (1).png" class="ig-img is-size-4"></a>
+              <a target="_blank" href=""><img src="images/icons8-facebook-50.png" class="ig-img"></a>
+              <a target="_blank" href=""><img src="images/icons8-playstore-50.png" class="ig-img"></a>
+              <a target="_blank" href=""><img src="images/icons8-ios-logo-50.png" class="ig-img"></a>
+                <!-- <a target="_blank" href="https://instagram.com/_solskyy_?igshid=NjIwNzIyMDk2Mg=="> <i class="ig-icon fa fa-instagram mr-5 is-size-2 has-text-white mt-5 " ></i></a>
+                <a target="_blank" href="https://www.facebook.com/fb.solskyy"><i class="fa fa-facebook-square mr-5 is-size-2 has-text-white mt-5 " aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/company/solskyy/"> <i class="fa fa-linkedin-square mr-5 is-size-2 has-text-white mt-5 linkd-icon" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://youtube.com/@solskyy7"> <i class="fa fa-youtube-play mr-5 is-size-2 has-text-white mt-5 yout-icon" aria-hidden="true"></i></a> -->
+            </div>
+        </div>
+        <hr class="line-btw">
+        <ul class="footer-list mt-4">
+            <li class="ml-6 mr-6 is-size-5 "><a href="index.html" class="has-text-white">Home</a></li>
+            <li class="ml-6 mr-6 is-size-5"><a href="AboutUs.html" class="has-text-white">About US</a></li>
+            <li class="ml-6 mr-6 is-size-5"><a href="Help.html" class="has-text-white">Help & Support</a></li>
+            <li class="ml-6 mr-6 is-size-5"><a href="disclaimer.html" class="has-text-white">Disclaimer</a></li>
+            <li class="ml-6 mr-6 is-size-5"><a href="privacy-policy.html" class="has-text-white">Privacy Policy</a></li>
+        </ul>
+        <!-- <div class="columns mob-tab-logo">
+            <img src="images/whitevariant.svg" class="is-5 column footer-logo" alt="" style="height: 75px; width: 180px;">
+            <h3 class="is-size-3 has-text-white  column footer-solskyy">SOLSKYY</h3>
+        </div> -->
+    
+        <div class="footer-copyright ">
+            <p class="footer-date has-text-white is-justify-content-flex-end ">
+                &copy;
+                <!-- <script>
+                    document.write(new Date().getFullYear())
+                </script> -->
+                . Govt. Of Himachal Pradesh
+            </p>
+        </div>
+    </footer>
+
+      
+
+      <script src="script.js"></script>
+  
+  </body>
+</html>
